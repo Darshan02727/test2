@@ -9,7 +9,7 @@ pipeline {
       }
     } 
         stage ('Test') {
-          agent { label 'jenkins' }
+          agent { label 'myslave' }
       steps{
         echo "This is Test stage"
         sh 'sleep 5'
